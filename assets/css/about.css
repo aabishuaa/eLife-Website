@@ -308,10 +308,11 @@
 }
 
 .supervisor-photo {
-    width: 1000px;
-    height: 300px;
+    width: 120px;  
+    height: 120px; 
     border-radius: var(--radius-round);
     overflow: hidden;
+    flex-shrink: 0; 
 }
 
 .supervisor-photo img {
