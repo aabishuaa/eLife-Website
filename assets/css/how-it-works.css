@@ -1,0 +1,115 @@
+/* How It Works Page Specific CSS */
+
+/* ===== HERO SECTION ===== */
+.how-it-works-hero {
+    padding-top: 120px;
+    padding-bottom: var(--spacing-xl);
+    background: var(--dark-bg);
+    color: var(--text-light);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.how-it-works-hero::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    border-radius: var(--radius-round);
+    background: var(--gradient-secondary);
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.how-it-works-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.how-it-works-hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== PROCESS OVERVIEW ===== */
+.process-overview {
+    background-color: var(--light-bg);
+    padding: var(--spacing-xl) 0;
+}
+
+.process-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: var(--spacing-xl) auto 0;
+    padding: 0 var(--spacing-md);
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: var(--gradient-purple-red);
+    transform: translateX(-50%);
+    border-radius: var(--radius-md);
+}
+
+.process-step {
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-primary);
+    color: var(--text-light);
+    border-radius: var(--radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    z-index: 2;
+    box-shadow: 0 0 0 5px var(--light-bg);
+}
+
+.step-content {
+    position: relative;
+    width: 45%;
+    padding: var(--spacing-lg);
+    background-color: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.process-step:nth-child(odd) .step-content {
+    margin-left: auto;
+}
+
+.process-step:nth-child(even) .step-content {
+    margin-right: auto;
+}
+
+.step-content h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary);
+}
+
+.step-content p {
+    margin-bottom: 0;
+}
+

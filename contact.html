@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - eLife Digital Proof of Life Verification</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="assets/images/logo.svg"
+            alt="eLife Logo"
+            class="logo-icon"
+          />
+          <span>eLife</span>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero-content">
+          <h1>Get in <span class="accent-text">Touch</span></h1>
+          <p>
+            Have questions about eLife? We're here to help. Contact our team for
+            more information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section class="contact-details">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card fade-in">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>Our team typically responds within 24 hours.</p>
+            <a href="mailto:team@elifejamaica.com" class="contact-link"
+              >team@elifejamaica.com</a
+            >
+          </div>
+
+          <div class="contact-card fade-in delay-1">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>Available Monday to Friday, 9 AM - 5 PM.</p>
+            <a href="tel:+18765550100" class="contact-link"
+              >+1 (876) 555-0100</a
+            >
+          </div>
+
+          <div class="contact-card fade-in delay-2">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Us</h3>
+            <p>Mona Campus, University of the West Indies</p>
+            <p>Kingston, Jamaica</p>
+          </div>
+
+          <div class="contact-card fade-in delay-3">
+            <div class="contact-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Support</h3>
+            <p>Need technical assistance?</p>
+            <a href="mailto:support@elifejamaica.com" class="contact-link"
+              >support@elifejamaica.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-container">
+          <div class="form-header">
+            <h2>Send us a Message</h2>
+            <p>
+              Fill out the form below and we'll get back to you as soon as
+              possible.
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number (Optional)</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your phone number"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="technical">Technical Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="partnership">Partnership Opportunities</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox-container">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent"
+                  >I agree to the processing of my personal data in accordance
+                  with the
+                  <a href="#" class="text-link">Privacy Policy</a>.</label
+                >
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-secondary btn-block">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <p class="text-center mb-4">
+          Find quick answers to common questions about eLife.
+        </p>
+
+        <div class="faq-container">
+          <div class="faq-item fade-in">
+            <div class="faq-question">
+              <h3>
+                Is eLife a replacement for the existing proof of life process?
+              </h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No, eLife is an optional digital pathway designed to coexist
+                with traditional methods. Pensioners who prefer the paper-based
+                process can continue to use it, while those who want a more
+                streamlined approach can opt for eLife.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-1">
+            <div class="faq-question">
+              <h3>How secure is the eLife verification process?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                eLife employs multiple layers of security, including facial
+                recognition, deepfake detection, and database cross-referencing.
+                All data is encrypted in transit and at rest. Our system has
+                been designed with security as the top priority, ensuring that
+                verification is both convenient and highly secure.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-2">
+            <div class="faq-question">
+              <h3>What if I don't have a smartphone?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                eLife is designed to work with family assistance. A trusted
+                family member with a smartphone can help complete the
+                verification process. Alternatively, pensioners can continue to
+                use the traditional paper-based process with a Justice of the
+                Peace or notary.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-3">
+            <div class="faq-question">
+              <h3>What happens if the verification fails?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                If automated verification fails, eLife provides several fallback
+                options. Users can retry with specific guidance, schedule a
+                video conference with an AGD agent, or revert to the traditional
+                paper-based process. The system ensures that pensioners are
+                never locked out of receiving their benefits.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in delay-4">
+            <div class="faq-question">
+              <h3>How often do I need to verify using eLife?</h3>
+              <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Just like the traditional process, eLife verification is
+                required on a quarterly basis. The system sends automated
+                reminders when verification is due, ensuring that pensioners
+                never miss a deadline.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="map-container">
+        <!-- This would be where we'd embed a Google Map in a real implementation -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.5301218536196!2d-76.74804368565611!3d18.006554287731402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb3ff4d40f8bc7%3A0xcc65e2f9175fe866!2sThe%20University%20of%20the%20West%20Indies%2C%20Mona%20Campus!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text fade-in-left">
+            <h2>Stay Updated</h2>
+            <p>
+              Subscribe to our newsletter to receive the latest updates about
+              eLife and digital government services in Jamaica.
+            </p>
+          </div>
+
+          <form class="newsletter-form fade-in-right">
+            <div class="form-group">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </div>
+            <p class="form-note">
+              We respect your privacy. You can unsubscribe at any time.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <div class="logo">
+              <img
+                src="assets/images/logo.svg"
+                alt="eLife Logo"
+                class="logo-icon"
+              />
+              <span>eLife</span>
+            </div>
+            <p>
+              A modern solution to digitize proof of life certificates for
+              Jamaican pensioners.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="benefits.html">Benefits</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fas fa-envelope"></i> team@elifejamaica.com</p>
+            <p><i class="fas fa-phone"></i> +1 (876) 555-0100</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2025 eLife. All rights reserved. A project by Team eLife.
+          </p>
+          <p>Supervised by Dr. Gunjan Mansingh</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+/* Responsive CSS for eLife Website */
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+/* 
+    - Large Desktop: 1200px and up
+    - Desktop: 992px to 1199px
+    - Tablet: 768px to 991px
+    - Mobile: 767px and below
+    - Small Mobile: 480px and below
+*/
+
+/* ===== DESKTOP (up to 1199px) ===== */
+@media (max-width: 1199px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .logo-text {
+        font-size: 4.5rem;
+    }
+}
+
+/* ===== TABLET (up to 991px) ===== */
+@media (max-width: 991px) {
+    html {
+        font-size: 14px;
+    }
+    
+    /* Header & Navigation */
+    .main-nav {
+        display: none; /* Hide default nav */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: var(--shadow-md);
+        padding: var(--spacing-md);
+    }
+    
+    .main-nav.active {
+        display: block;
+    }
+    
+    .scrolled .main-nav {
+        background-color: var(--dark-bg);
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    /* Hero section */
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        order: 2;
+    }
+    
+    .hero-image {
+        order: 1;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    /* Features section */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Problem & Solution */
+    .problem-solution .container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
+/* ===== MOBILE (up to 767px) ===== */
+@media (max-width: 767px) {
+    html {
+        font-size: 13px;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding-top: 100px;
+        padding-bottom: var(--spacing-lg);
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    /* Features section */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Video section */
+    .video-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* CTA section */
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-section p {
+        font-size: 1.1rem;
+    }
+    
+    /* Intro animation */
+    .logo-text {
+        font-size: 3.5rem;
+    }
+    
+    .fingerprint-logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* ===== SMALL MOBILE (up to 480px) ===== */
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    
+    .main-header .container {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .logo span {
+        font-size: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .logo-text {
+        font-size: 3rem;
+    }
+    
+    .fingerprint-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .feature-card {
+        padding: var(--spacing-md);
+    }
+    
+    .feature-icon {
+        font-size: 2rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .social-icons {
+        gap: var(--spacing-sm);
+    }
+    
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* ===== LANDSCAPE ORIENTATION ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .intro-container {
+        padding: var(--spacing-md);
+    }
+    
+    .fingerprint-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .logo-text {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== SUPPORT FOR DARK MODE ===== */
+@media (prefers-color-scheme: dark) {
+    body.auto-dark-mode {
+        --light-bg: #121212;
+        --text-dark: #e0e0e0;
+        
+        color: var(--text-light);
+        background-color: var(--dark-bg);
+    }
+    
+    body.auto-dark-mode .feature-card,
+    body.auto-dark-mode .main-header {
+        background-color: #1e1e1e;
+        color: var(--text-light);
+    }
+    
+    body.auto-dark-mode .main-nav a {
+        color: var(--text-light);
+    }
+    
+    body.auto-dark-mode .problem,
+    body.auto-dark-mode .solution {
+        background-color: #1e1e1e;
+    }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+    body.auto-contrast {
+        --primary: #ff0000;
+        --secondary: #0000ff;
+        --text-dark: #000000;
+        --text-light: #ffffff;
+        
+        background-color: white;
+        color: black;
+    }
+    
+    body.auto-contrast a,
+    body.auto-contrast .btn {
+        text-decoration: underline;
+    }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    body.auto-reduce-motion * {
+        animation-duration: 0.001s !important;
+        transition-duration: 0.001s !important;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .main-header,
+    .main-footer,
+    .cta-section,
+    .video-section,
+    .intro-container {
+        display: none;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+}
